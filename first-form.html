@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Profile Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header class="profile-header">
+
+            <h1>Personal Profile</h1>
+            <p><em>Update your profile so others can get  know you better</em></p>
+        </header>
+
+        <form class="profile-form"  style="display:block">
+
+            <div class="form-row">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+
+            <div class="form-row"  style="display:none">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="abc@hhh.com">
+            </div>
+
+          <fieldset Class="radio-form-row" style="display:none">
+            <legend>Allow push notifications?</legend>
+    <input type="radio" name="push-type" id="push-type-1" value="no">
+    <label for="push-type-1" class="radio-label">NO</label>
+
+    <input type="radio" name="push-type" id="push-type-2" value="yes">
+    <label for="push-type-2" class="radio-label">YES</label>
+          </fieldset>
+
+          <div class="form-row" style="display:none">
+
+            <label for="color">Pick a profile colour</label>
+            <select name="color" id="color">
+
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="red">Red</option>
+
+
+            </select>
+          </div>
+
+          <!--ADDING TEXTAREA IN THE FORM-->
+          <div class="form-row" style="display:none">
+            <label for="description">Your profile description</label>
+            <textarea name="description" id="description"></textarea>
+
+         <!--   <div class="decription">Describle yourself here -- your hobbies and interest.</div>-->
+          </div>
+
+
+          <!--ADDING CHECK BOX LIST NAMELY HOBBY LIST-->
+
+          <div class="form-row" style="display:none">
+            <label for="ishappy" class="checkbox-label">
+                  <input type="checkbox" name="ishappy" id="ishappy" value="happy">
+                  <span>I am generally a happy person.</span>
+
+
+            </label>
+
+          </div>
+
+          <div class="form-row" style="display:none">
+
+            <button>Submit</button>
+          </div>
+        </form>
+    </body>
+</html>
